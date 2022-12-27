@@ -33,6 +33,16 @@ a {
     text-decoration: none;
 }
 
+button {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
 /* Nav bar */
 nav {
     display: flex;
@@ -56,7 +66,7 @@ nav ul a {
 }
 
 nav img {
-    max-width: 60%;
+    max-width: 40vw;
 }
 
 /* Header */
@@ -69,6 +79,10 @@ header {
 
 header img {
     max-width: 100%;
+}
+
+header #started {
+    margin: 2rem 0rem;
 }
 
 /* Main */
@@ -99,16 +113,35 @@ main section a {
 main section form {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
+}
+
+main section form input {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    margin-bottom: 2rem;
+}
+
+main section form input::placeholder {
+    opacity: 0.5;
 }
 
 #earlyAcces {
     background-color: hsl(217, 28%, 15%);
+    border-radius: 1rem;
+    padding: 2rem;
+    transform: translateY(10rem);
+}
+
+#earlyAcces h3 {
+    padding-bottom: 1rem;
 }
 
 /* Footer */
 
 footer {
-    padding: 18vw 6vw;
+    padding: 15rem 6vw 6rem 6vw;
     background-color: hsl(216, 53%, 9%);
 }
 
@@ -153,6 +186,8 @@ footer {
 }
 
 #socialMedia ul li img {
+    max-width: 5vw;
+    padding: 1rem;
     border: 0.1rem solid hsl(0, 0%, 100%);
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
