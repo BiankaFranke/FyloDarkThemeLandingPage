@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    padding: 1.5rem 0rem;
+}
+
+h2 {
+    padding-bottom: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    padding: 6vw;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: hsl(219, 30%, 18%);
+}
+
+nav ul {
+    display: flex;
+    column-gap: 1rem;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+nav ul a {
+    color: hsl(0, 0%, 100%);
+}
+
+nav img {
+    max-width: 60%;
+}
+
+/* Header */
+
+header {
+    padding: 0vw 6vw;
+    text-align: center;
+    background-color: hsl(219, 30%, 18%);
+}
+
+header img {
+    max-width: 100%;
+}
+
+/* Main */
+
+main {
+    background-color: hsl(219, 30%, 18%);
+    padding: 0vw 6vw;
+}
+
+/* Sections */
+main section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main section .icon {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
+
+main section a {
+    color: hsl(176, 68%, 64%);
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+}
+
+#earlyAcces {
+    background-color: hsl(217, 28%, 15%);
+}
+
+/* Footer */
+
+footer {
+    padding: 18vw 6vw;
+    background-color: hsl(216, 53%, 9%);
+}
+
+#contact ul {
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+}
+
+#contact ul li {
+    padding: 1rem 1rem 0rem;
+}
+
+#contact ul li:first-of-type {
+    list-style-image: url(../img/icon-location.svg);
+}
+
+#contact ul li:nth-of-type(2) {
+    list-style-image: url(../img/icon-phone.svg);
+}
+
+#contact ul li:nth-of-type(3) {
+    list-style-image: url(../img/icon-email.svg);
+}
+
+#footerBar ul li {
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+#footerBar ul:first-of-type {
+    padding-bottom: 1.5rem;
+}
+
+#socialMedia ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8rem;
+}
+
+#socialMedia ul li {
+    list-style-type: none;
+}
+
+#socialMedia ul li img {
+    border: 0.1rem solid hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
