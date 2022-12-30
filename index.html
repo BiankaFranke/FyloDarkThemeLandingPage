@@ -15,16 +15,6 @@
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <nav>
@@ -117,9 +107,9 @@
               for live collaboration. No email attachments required.
             </p>
 
-            <a href="#"
+            <a href="#" id="howFyloWorks" 
               >See how Fylo works
-              <img src="./assets/img/icon-arrow.svg" alt="Arrow" 
+              <img src="./assets/img/icon-arrow.svg" alt="Arrow"
             /></a>
           </div>
       </section>
@@ -173,14 +163,15 @@
         </p>
 
         <form>
-          <input type="email" name="email" placeholder="email@example.com">
-          <button type="submit">Get Started For Free</button>
+          <input type="email" name="email" placeholder="email@example.com" id="input">
+          <p id="invalid">Please enter a valid email address</p>
+          <button type="submit" id="btnFree">Get Started For Free</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <section>
+      <section id="contactSec">
         <img src="./assets/img/logo.svg" alt="Logo">
         <div id="contact">
           <ul>
@@ -213,15 +204,6 @@
           <li><img src="./assets/img/logo-twitter.svg" alt="Logo Twitter"></li>
           <li><img src="./assets/img/logo-instagram.svg" alt="Logo Instagram"></li>
         </ul>
-      </section>
-
-      <section id="frontendMentor">
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/BiankaFranke">Bianka</a>.
-        </p>
       </section>
     </footer>
 
