@@ -41,7 +41,7 @@ a {
 button {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     padding: 1rem 4rem;
     border: none;
     border-radius: 2rem;
@@ -66,6 +66,7 @@ button:hover {
 #invalid {
     color: red;
     display: none;
+    padding-top: 0.5rem;
 }
 
 /* Nav bar */
@@ -148,6 +149,7 @@ main section form {
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    text-align: left;
 }
 
 main section form input {
@@ -280,6 +282,10 @@ footer {
 }
 
 @media (min-width: 1440px) {
+    button {
+        font-size: 18px;
+    }
+
     nav {
         padding: 4vw;
     }
@@ -304,19 +310,27 @@ footer {
     }
 
     main #earlyAcces form {
-        display: flex;
+        display: grid;
         justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
-        flex-direction: row;
+        /* background-color: red; */
     }
 
     main #earlyAcces form input {
         margin-bottom: 0rem;
         padding: 1rem 18rem;
+        grid-area: 1 / 1 / 2 / 2;
     }
 
     main #earlyAcces form button {
         padding: 1rem 10rem;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    main #invalid {
+        text-align: left;
     }
 
     main #servicesDiv {
